@@ -81,15 +81,53 @@ def show_phase_1():
 def show_phase_2():
     st.title("Tracking & Versioning")
     st.image("images/compass.png", use_container_width=True)
-    st.write("text text text")
+    st.write(
+        """
+        Tracking and versioning are essential for managing the lifecycle of ML experiments, 
+        ensuring reproducibility, and enabling collaboration. They help log parameters, metrics, 
+        and artifacts while maintaining a history of changes to data, code, and models.  
+        """
+    )
 
-    st.subheader("MLflow: Experiment tracking")
-    st.write("text text text")
+    st.subheader("MLlow: Experiment tracking")
+    st.write(
+        """
+        MLflow is an open-source platform for managing the machine learning lifecycle.
+        MLflow solves the chaos of model versioning and lets teams collaborate on ML development.
+        """
+    )
+
+    st.badge(
+        "**What was done:** Set up experiment tracking, logging of parameters/metrics, and a web UI.",
+        color="green"
+    )
+    st.badge(
+        "**Purpose:** To compare model versions and reproduce the best results.",
+        color="green"
+    )
+
+    st.image("images/mlflow_ui_1.jpg", caption="The list of Experiments", use_container_width=True)
+    st.image("images/mlflow_ui_2.jpg", caption="Model metrics", use_container_width=True)
 
     st.markdown("---")
 
     st.subheader("DVC: Data version control")
-    st.write("text text text")
+    st.write(
+        """
+        DVC (Data Version Control) helps version datasets, track changes, 
+        and reproduce ML pipelines reliably - keeping your experiments organized and your team in sync.
+        """
+    )
+
+    st.badge(
+        "**What was done:** Version control for datasets and models.",
+        color="green"
+    )
+    st.badge(
+        "**Purpose:** Ensures reproducibility and team collaboration.",
+        color="green"
+    )
+
     st.image("images/dvc_pipeline_1.jpg", caption="It's work!", use_container_width=True)
     st.image("images/dvc_pipeline_2.jpg", caption="DVC Pipeline Dependency Graph", use_container_width=True)
     st.write(
@@ -109,8 +147,27 @@ def show_phase_2():
     st.markdown("---")
 
     st.subheader("Docker: Containerized services")
-    st.write("text text text")
+    st.write(
+        """
+        Docker standardizes environments to ensure reproducibility and scalability of ML solutions. 
+        Containers package code, dependencies, and models into portable units, 
+        guaranteeing identical performance across all stages - from experiments to production.
+        """
+    )
+
+    st.badge(
+        "**What was done:** Containerized the entire setup (FastAPI + MLflow).",
+        color="green"
+    )
+    st.badge(
+        "**Purpose:** Simplifies deployment and scaling.",
+        color="green"
+    )
+
     st.image("images/docker_workflow.png", use_container_width=True)
+
+    st.subheader("Current Progress")
+    st.write("A Docker container has been built during the development phase of our project.")
     st.image("images/docker_create.jpg", use_container_width=True)
 
 
