@@ -34,41 +34,6 @@ def show_introduction():
         "3. **Reliability** and scalability in production.\n\n"
     )
 
-    st.markdown("---")
-
-    st.subheader("GitHub Repository")
-    st.write(
-        """
-            Link to a repository on Github with a machine learning model:
-            https://github.com/DataScientest-Studio/Template_MLOps_accidents
-        """
-    )
-
-    st.markdown("---")
-
-    st.subheader("Technology Stack")
-    st.write(
-        "The project follows a **phased approach**, progressively enhancing the pipeline:\n\n"
-
-        "1. **Foundations:** GitHub setup → Model training → FastAPI → Testing\n"
-        "2. **Tracking & Versioning:** MLflow | DVC | Docker\n"
-        "3. **Orchestration:** Kubernetes | Jenkins\n"
-        "4. **Monitoring:** Prometheus/Grafana | Evidently"
-    )
-
-    st.markdown("---")
-
-    st.subheader("Project Goals")
-    st.write(
-        """
-            ✅ Implement a **scalable API** for model inference (FastAPI)  
-            ✅ Ensure **experiment tracking & reproducibility** (MLflow, DVC)  
-            ✅ Automate **CI/CD pipelines** (Jenkins)  
-            ✅ Enable **real-time monitoring** (Prometheus/Grafana, Evidently)  
-            ✅ Containerize and **orchestrate** services (Docker, Kubernetes)  
-        """
-    )
-
 
 def show_phase_1():
     st.title("Data & Model Foundations")
