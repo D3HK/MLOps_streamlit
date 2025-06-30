@@ -202,6 +202,9 @@ def show_phase_3():
     st.image("images/kubernetes_mlflow.jpg", use_container_width=True)
     st.image("images/kubernetes_grafana.jpg", use_container_width=True)
 
+    st.subheader("Kubernetes Architecture")
+    st.image("images/kubernetes_architecture.png", use_container_width=True)
+
     st.markdown("---")
 
     st.subheader("Jenkins: CI/CD pipelines")
