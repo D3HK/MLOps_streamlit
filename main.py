@@ -3,7 +3,7 @@ import streamlit.components.v1 as components
 
 
 def show_introduction():
-    st.title("MLOps Accidents Pipeline Project")
+    st.title("Accident Severity Prediction Pipeline")
 
     st.image("images/123.png", use_container_width=True)
 
